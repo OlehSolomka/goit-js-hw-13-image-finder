@@ -1,7 +1,6 @@
 import { getImg } from './apiService';
-import { buttonLocker, scrollIntoView, refs} from './uxService';
+import { buttonLocker, scrollIntoView, refs } from './uxService';
 import imgCardTemplate from '../templates/img-card.template.hbs';
-
 
 let page = 1;
 let endPoint = null;
@@ -28,9 +27,9 @@ export function createImgList(e) {
   refs.button.classList.remove('hide');
   endPoint = e.target.value;
   getImg(endPoint, page).then(data => {
-      if (data.hits.length < 12) {
-          refs.button.classList.add('hide');
-      }
+    if (data.hits.length < 12) {
+      refs.button.classList.add('hide');
+    }
     createMarkup(data);
   });
 }
