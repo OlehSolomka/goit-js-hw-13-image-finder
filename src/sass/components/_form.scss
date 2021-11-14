@@ -1,0 +1,27 @@
+.search-form {
+  text-align: center;
+}
+
+.search-form input {
+  display: inline-block;
+  margin-bottom: 15px;
+  margin-top: 15px;
+  padding: 5px 20px;
+  width: 100%;
+  border: 1px solid $mainTextColor;
+  transition: border-color, 250, $timefunction;
+
+  &:hover,
+  &:focus {
+    border-color: $accentColor;
+    outline: none;
+  }
+
+  @media screen and(min-width:768px) {
+    max-width: 400px;
+  }
+  @media screen and(min-width:1200px) {
+    max-width: 800px;
+    margin-bottom: 30px;
+  }
+}

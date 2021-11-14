@@ -1,0 +1,16 @@
+.stats {
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  display: block;
+  display: flex;
+  justify-content: space-around;
+  padding: 10px 0;
+  background-color: azure;
+  width: 100%;
+
+  transform: translateY(100%);
+  transition: transform 250ms $timefunction;
+
+
+}

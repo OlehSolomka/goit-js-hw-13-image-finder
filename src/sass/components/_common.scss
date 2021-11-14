@@ -1,0 +1,26 @@
+body {
+  background-color: $mainBgColor;
+  font-family: 'Megrim';
+  color: $mainTextColor;
+  overflow-x: hidden;
+}
+
+p {
+  margin: 0px;
+  padding: 0px;
+}
+
+.container {
+  margin-left: auto;
+  margin-right: auto;
+  padding: 0px 15px;
+  @media screen and(min-width:480px) {
+    width: 480px;
+  }
+  @media screen and(min-width:768px) {
+    width: 768px;
+  }
+  @media screen and(min-width:1200px) {
+    width: 1200px;
+  }
+}
